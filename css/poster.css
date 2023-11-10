@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.movie-poster {
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 2rem;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.movie-poster-container {
+    height: 85%;
+    width: 30%;
+    text-align: right;
+    /*add for animation*/
+    position: relative;
+    left: -50rem;
+    animation: slide-from-left 3.5s ease-in-out forwards;
+}
+
+@keyframes slide-from-left {
+    80% {left: 1.5rem;}
+    100% {left: 0;}
+}
+
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #777;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #777;
+}
